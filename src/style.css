@@ -2,45 +2,45 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #abff4f;
+  background-image: url('https://6af939986da8c586.demo.carrd.co/assets/images/bg.jpg?v=4ba5bdd3');
+
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
+  z-index: 0;
+  /* pointer-events: none; */
+  transform: scale(1);
+  background-attachment: scroll;
+  background-position: 0% 0%, center;
+  background-repeat: repeat, repeat;
+  background-size: auto, cover;
+  background-color: #ffffff;
 }
-
-.app .images {
-  width: 50%;
-  top: 0;
-  bottom: 0;
-  position: fixed;
+.container {
+  margin: 20% 50px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
-.app .rightpart {
-  width: 50%;
-  top: 50px;
-  right: 50px;
-  position: fixed;
-  bottom: 0;
-  /* background: #fff; */
-}
-.app .images img {
-  width: 100%;
-}
-.about,
-.contact {
+.about {
   display: 'flex';
-  padding: 50px;
-  background: #fff;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.5s ease-in-out 0.25s, min-height 0.25s ease-in-out,
+    max-height 0.25s ease-in-out;
 }
-.contact {
-  background-color: #08bdbd;
-}
-.about h1,
-.contact h1 {
-  font-size: 3rem;
-  font-family: 'Inter', sans-serif;
-  color: '#303030';
+.about h1 {
+  font-size: 4.625em;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: -0.2rem;
+  font-size: 4.625em;
+  line-height: 1;
+  font-weight: 200;
+  color: #39bce6;
   margin: 0;
+}
+.about p {
+  color: rgba(0, 0, 0, 0.431);
 }
 .button {
   padding: 2em 0;
@@ -48,7 +48,7 @@ body {
 }
 .button button {
   padding: 20px 20px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 1px solid #d6d6d6;
   cursor: pointer;
   background-color: #08bdbd;

@@ -5,15 +5,7 @@ import About from './About';
 export default function App() {
   return (
     <div className="app">
-      <video width="100%" height="auto" autoplay loop>
-        <source
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className="rightpart">
+      <div className="container">
         <About />
       </div>
     </div>
